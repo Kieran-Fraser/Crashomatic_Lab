@@ -140,33 +140,17 @@ namespace Lab03_CrashoMatic_kieranfraser
             Rectangle botWall = new Rectangle(0, _canvas.ScaledHeight+car._height, _canvas.ScaledWidth, 1);     // bottom wall rectangle boundary
 
             if (leftWall.IntersectsWith(car.GetRect()))     // left boundary check
-            {
-                //if (!(car is JackpotCar))
-                //    Car.Score += Math.Abs(car._speed);          //score increase
-                //else Car.Score += 50;
                 return true;
-            }   
+             
             if (rightWall.IntersectsWith(car.GetRect()))    // right booundary check
-            {
-                //if (!(car is JackpotCar))
-                //    Car.Score += Math.Abs(car._speed);          //score increase
-                //else Car.Score += 50;
                 return true;
-            }
+            
             if (topWall.IntersectsWith(car.GetRect()))      // top boundary check
-            {
-                //if (!(car is JackpotCar))
-                //    Car.Score += Math.Abs(car._speed);          //score increase
-                //else Car.Score += 50;
                 return true;
-            }
-            if (botWall.IntersectsWith(car.GetRect()))       // bottom boundary check
-            {
-                //if (!(car is JackpotCar))
-                //    Car.Score += Math.Abs(car._speed);          //score increase
-                //else Car.Score += 50;
+            
+            if (botWall.IntersectsWith(car.GetRect()))       // bottom boundary check 
                 return true;
-            }
+            
             return false;           // retrun false if car is within drawer on all sides
         }
         /// <summary>
